@@ -1,29 +1,9 @@
-var nav = document.querySelector('nav');
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
-window.addEventListener('scroll', function () {
-  if (window.pageYOffset > 100) {
-    nav.classList.add('bg-dark', 'shadow');
-  } else {
-    nav.classList.remove('bg-dark', 'shadow');
-  }
-});
+hamburger.addEventListener("click", mobileMenu);
 
-$('.owl-carousel').owlCarousel({
-  loop:true,
-  margin:100,
-  nav:false,
-  responsive:{
-      0:{
-          items:1
-      },
-      600:{
-          items:3
-      },
-      1000:{
-          items:3
-      },
-      1400:{
-        items:3
-      }
-  }
-})
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
