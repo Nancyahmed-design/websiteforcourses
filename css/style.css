@@ -6,11 +6,11 @@
 
 }
 
-.padding-0 {
+/* .padding-0 {
   padding-right: 0 !important;
   padding-left: 0 !important;
-}
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+} */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap'); */
 
 
 
@@ -150,12 +150,86 @@ a {
   margin-top:150px !important;
 
 }
+.circular--square{
+  border-radius: 50%;
+}
+.content-size{
+  font-size:14px;
+}
 .about{
-  width: 100% !important;
+  /* width: 100% !important; */
   height: 125vh;
 }
+.img-start{
+  height: 125vh;
+}
+.start-text{
+  padding: 160px;
+}
+.start-title{
+  font-size: 2.1875rem;
+    font-weight: 300;
+}
+.start-sub-title{
+  font-size: 1.3125rem;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
 .learn{
   background-color:#0072BC;
 height: 75vh;
 
 }
+
+.line{
+  width: 90%;
+  height: 0.5px;
+  margin: 50px ;
+  text-align: center;
+  font-size: 28px;
+  position: relative;
+  background-color: white;
+}
+.line:after {
+  content: '';
+  width: 80%;
+  border-bottom: solid 0.5px #fff;
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  z-index: 1;
+}
+
+#topBtn{
+  position:fixed;
+  bottom:80px;
+  right:50px;
+  font-size: 22px;
+  width: 50px;
+  height:50px;
+  background-color:white;
+  color:#0072BC;
+  border: none;
+
+  
+  cursor: pointer;
+  display: none;
+
+}
+
+.copy-size{
+  font-size: 14px;
+}
+/*********************************** contact page ************************************/
+
+.contact-image{
+  background-image: url("../imgs/contact/about-free-img.jpg");
+  background-size:cover ;
+  width: 100%;
+  height: 75vh;
+  position: relative;
+  overflow: hidden;
+  
+}
+
